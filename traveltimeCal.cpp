@@ -28,7 +28,7 @@ void directwavetime(int nl, double *velMod, double *depthMod, double delta, doub
 
     for (int i=0; i<nl; i++)
     {
-        if (depthEvent<depthMod[i])
+        if (depthEvent<=depthMod[i])
         {
             evtL = i-1;
             break;
